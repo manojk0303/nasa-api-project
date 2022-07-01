@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NASA AOPD</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main-container">
+        <navbar id="navbar">
+            <h4 id="logo">NASA AOPD</h4>
+            <a id="home" onclick="getData()">Load more</a>
+        </navbar>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div id="card-container"></div>
+    </div>
+    <div class="loader" id="loader" hidden><img src="loader.svg" alt="Loading" ></div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="app.js"></script>
+    <script>
+        AOS.init({offset: 120, // offset (in px) from the original trigger point
+                delay: 400, // values from 0 to 3000, with step 50ms
+                duration: 3000, // values from 0 to 3000, with step 50ms
+            });
+      </script>
+</body>
+</html>
